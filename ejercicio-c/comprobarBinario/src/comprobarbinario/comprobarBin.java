@@ -26,19 +26,24 @@ public class comprobarBin {
             }
             num = num / 10;
         }
+        // Si el numero es binario retorna True
         return true;
     }
 
     // Recursividad
     public static int NumeroBin(int num){
+        // Retorna -1 si el numero es numero negativo
         if (num < 0){
             return -1;
         } else {
+        // Llama a la funcion recursiva privada
             return NumeroBinarioR(num);
         }
     }
 
     private static int NumeroBinarioR(int num){
+        // Obtiene el dígito más a la derecha del número con la ayuda del 
+        // operador '%' dividiéndolo por 10
         if (num != 0){
             if (num % 10 > 1) {
                 return -1;
@@ -46,6 +51,7 @@ public class comprobarBin {
             num = num / 10;
         num = NumeroBinarioR(num);    
     }
+    // Si el numero es binario retorna 1
     return 1;
     }
 }
