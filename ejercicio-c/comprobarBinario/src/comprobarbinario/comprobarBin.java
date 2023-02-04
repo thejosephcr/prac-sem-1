@@ -28,4 +28,24 @@ public class comprobarBin {
         }
         return true;
     }
+
+    // Recursividad
+    public static int NumeroBin(int num){
+        if (num < 0){
+            return -1;
+        } else {
+            return NumeroBinarioR(num);
+        }
+    }
+
+    private static int NumeroBinarioR(int num){
+        if (num != 0){
+            if (num % 10 > 1) {
+                return -1;
+            }
+            num = num / 10;
+        num = NumeroBinarioR(num);    
+    }
+    return 1;
+    }
 }

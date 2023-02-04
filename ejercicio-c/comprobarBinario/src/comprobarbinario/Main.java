@@ -20,6 +20,14 @@ public class Main {
         // Llamada de la funcion
         System.out.println("El numero es binario?");
         System.out.println(comprobarBin.NumeroBinario(N));
+
+        // Llamada de la funcion recursiva
+        int bin = comprobarBin.NumeroBin(N);
+        if (bin == -1){
+            System.out.println("El numero no es binario");
+        } else if (bin == 1){
+            System.out.println("El numero es binario");
+        }
     }
     
 }
