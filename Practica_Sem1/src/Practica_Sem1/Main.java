@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
          //=============== Ejercicio a ===============   
         EjercicioA a = new EjercicioA ();
-        String oracion = JOptionPane.showInputDialog("Digite una oración ");
+        String oracion = JOptionPane.showInputDialog("Ej A: Digite una oración ");
         /*
             Imprimir en pantalla el resultado del llamado a la funcion 
             quitarVocales que recibe por parametro la oracion que digito el usuario
@@ -33,7 +33,7 @@ public class Main {
         //=============== Ejercicio b ===============       
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
 
-        int dato = sumaNumeros.Sumanumeros(4); // Se pone el nombre del objeto . y el metodo creado y se le envia el valor de entrada
+        int dato = sumaNumeros.Sumanumeros(3); // Se pone el nombre del objeto . y el metodo creado y se le envia el valor de entrada
 
         System.out.println("---------- Ejercicio b ----------");
         if (dato == -1) { // Se valida valor de entrada
