@@ -17,7 +17,7 @@ public class main {
        
         
         //=============== Ejercicio d =============== 
-       calculos calc = new calculos(); //Se crea objeto del ejercicio d
+        calculos calc = new calculos(); //Se crea objeto del ejercicio d
         System.out.println("Resultado con ciclos");
         System.out.println(calc.calcExponencial(2, 5)); //Imprime la información con ciclos
         System.out.println("\nResultado con recursividad");
