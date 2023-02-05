@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package calculos;
+package Practica_Sem1;
 
 import javax.swing.JOptionPane;
 
@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author araya
  */
-public class main {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
          //=============== Ejercicio a ===============   
-        ejercicioA a = new ejercicioA ();
+        EjercicioA a = new EjercicioA ();
         String oracion = JOptionPane.showInputDialog("Digite una oración ");
         /*
             Imprimir en pantalla el resultado del llamado a la funcion 
@@ -47,7 +47,7 @@ public class main {
         //=============== Ejercicio c ===============       
         
         //=============== Ejercicio d =============== 
-        calculos calc = new calculos(); //Se crea objeto del ejercicio d
+        Ejercicio_d calc = new Ejercicio_d(); //Se crea objeto del ejercicio d
         System.out.println("---------- Ejercicio d ----------");
         System.out.println("Resultado con ciclos del ejercicio d:");
         System.out.println(calc.calcExponencial(2, 5)); //Imprime la información con ciclos
