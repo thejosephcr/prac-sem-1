@@ -44,11 +44,10 @@ public class Ejercicio_d {
     }
 
     public double calcFactorial(int num) { // Metodo de verificacion
-
         return calcFactorialR(num, 1, 1);
     }
 
-    public double calcFactorialR(int num, int i, double result) { // Metodo recursivo
+    private double calcFactorialR(int num, int i, double result) { // Metodo recursivo
         if (i <= num) {
             result = result * i; //Calculo de resultado
             return calcFactorialR(num, i + 1, result); //Llamada recursiva
