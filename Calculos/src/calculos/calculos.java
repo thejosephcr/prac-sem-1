@@ -28,7 +28,6 @@ public class calculos {
     
     public double calcExpo(int n, int x){ // Metodo de verificacion
         if (n == 0 || x == 0){
-            System.out.println("=== [ERROR] : Uno de los valores es 0 ===");
             return -1; // -1 simbolisa un error al ingresar 0 en los valores n o x
         } else {
             return calcExpoR(n, x, 0, 0);
