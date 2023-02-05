@@ -24,10 +24,11 @@ public class main {
         if (dato == -1) { // Se valida valor de entrada
             System.out.println("=== [ERROR]: No es un numero natural ===");
         } else {
-            System.out.printf("El resultado del ejercicio b es:%d\n", dato);
+            System.out.printf("El resultado del ejercicio b es: %d\n", dato);
 
         }
-
+        System.out.println(" ");
+        
         //=============== Ejercicio d =============== 
         calculos calc = new calculos(); //Se crea objeto del ejercicio d
         System.out.println("Resultado con ciclos del ejercicio d:");
