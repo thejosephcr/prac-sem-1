@@ -24,8 +24,12 @@ public class Ejercicio_b {
         if (valor == 1) { //Condicion para finalizar
             return 1;
         } else {
+<<<<<<< Updated upstream
             return valor + SumanumerosR(valor - 1, resultado); // Se realiza la recursividad del ejercicio
 
+=======
+            return valor + SumanumerosR(valor - 1); // Se realiza la recursividad del ejercicio
+>>>>>>> Stashed changes
         }
 
     }

@@ -14,7 +14,10 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
+        //=============== Ejercicio a ===============
+        
+        
         //=============== Ejercicio b ===============       
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
 
@@ -25,10 +28,12 @@ public class main {
             System.out.println("=== [ERROR]: No es un numero natural ===");
         } else {
             System.out.printf("El resultado del ejercicio b es: %d\n", dato);
-
         }
         System.out.println(" ");
-
+        
+        //=============== Ejercicio c ===============
+        
+        
         //=============== Ejercicio d =============== 
         calculos calc = new calculos(); //Se crea objeto del ejercicio d
         System.out.println("---------- Ejercicio d ----------");
