@@ -4,6 +4,8 @@
  */
 package calculos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author araya
@@ -14,6 +16,15 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         //=============== Ejercicio a ===============   
+        ejercicioA a = new ejercicioA ();
+        String oracion = JOptionPane.showInputDialog("Digite una oración ");
+        /*
+            Imprimir en pantalla el resultado del llamado a la funcion 
+            quitarVocales que recibe por parametro la oracion que digito el usuario
+         */
+        JOptionPane.showMessageDialog(null, "Su oración sin vocales: \n"
+                + a.quitarVocales(oracion));
 
          
         //=============== Ejercicio a ===============       
