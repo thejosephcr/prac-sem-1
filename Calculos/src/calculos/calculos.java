@@ -37,7 +37,7 @@ public class calculos {
     
     private double calcExpoR(int n, int x, int i, double result){ //Metodo recursivo
         if (i < n) {
-            result = result + (Math.pow(x,i) / factorial(i)); //Se calcula el resultado
+            result = result + (Math.pow(x,i) / calcFactorial(i)); //Se calcula el resultado
             return calcExpoR(n, x, i+1, result); //Reliza llamada recursiva con los valores invariables y nuevos
         } else {
             return result; //Se retorna el valor en caso que no cumpla la condición
@@ -45,16 +45,12 @@ public class calculos {
     }
     
     public double calcFactorial(int num){ // Metodo de verificacion
-        if(num == 0){
-            System.out.println("=== [ERROR] : Uno de los valores es 0 ===");
-            return -2; // -2 simbolisa un error al ingresar 0 el denominador
-        } else {
-            return calcFactorialR(num, 1, 1);
-        }
+        
+         return calcFactorialR(num, 1, 1);
     }
     
     public double calcFactorialR(int num, int i, double result){ // Metodo recursivo
-        if(i>num){
+        if(i<= num){
             result = result * i; //Calculo de resultado
             return calcFactorialR(num, i+1, result); //Llamada recursiva
         } else {
