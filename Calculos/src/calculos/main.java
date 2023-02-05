@@ -19,8 +19,8 @@ public class main {
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
 
         int dato = sumaNumeros.Sumanumeros(4); // Se pone el nombre del objeto . y el metodo creado y se le envia el valor de entrada
-        //Se llama
-        
+
+        System.out.println("---------- Ejercicio b ----------");
         if (dato == -1) { // Se valida valor de entrada
             System.out.println("=== [ERROR]: No es un numero natural ===");
         } else {
@@ -28,9 +28,10 @@ public class main {
 
         }
         System.out.println(" ");
-        
+
         //=============== Ejercicio d =============== 
         calculos calc = new calculos(); //Se crea objeto del ejercicio d
+        System.out.println("---------- Ejercicio d ----------");
         System.out.println("Resultado con ciclos del ejercicio d:");
         System.out.println(calc.calcExponencial(2, 5)); //Imprime la información con ciclos
 
