@@ -14,17 +14,17 @@ public class Ejercicio_b {
         if (valor <= 0) {
             return -1;
         } else {
-            return SumanumerosR(valor, 0);
+            return SumanumerosR(valor);
         }
 
     }
 
-    private int SumanumerosR(int valor, int resultado) {
+    private int SumanumerosR(int valor) {
 
         if (valor == 1) { //Condicion para finalizar
             return 1;
         } else {
-            return valor + SumanumerosR(valor - 1, resultado); // Se realiza la recursividad del ejercicio
+            return valor + SumanumerosR(valor - 1); // Se realiza la recursividad del ejercicio
 
         }
 
