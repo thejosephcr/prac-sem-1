@@ -16,7 +16,7 @@ public class main {
     public static void main(String[] args) {
 
          
-        //=============== Ejercicio b ===============       
+        //=============== Ejercicio a ===============       
         
         
         //=============== Ejercicio b ===============       
@@ -33,6 +33,8 @@ public class main {
         }
         System.out.println(" ");
 
+        //=============== Ejercicio c ===============       
+        
         //=============== Ejercicio d =============== 
         calculos calc = new calculos(); //Se crea objeto del ejercicio d
         System.out.println("---------- Ejercicio d ----------");
