@@ -10,7 +10,7 @@ package Practica_Sem1;
  */
 public class Ejercicio_c {
     // Funcion para comprobar Binarios
-    public static boolean NumeroBinario(int num)
+    public static boolean NumeroBinario(int num)    
     {
         // Muestra False si el numero es numero negativo
         if (num < 0) {
@@ -48,7 +48,7 @@ public class Ejercicio_c {
             if (num % 10 > 1) {
                 return -1;
             }
-            num = num / 10;
+        num = num / 10;
         num = NumeroBinarioR(num);    
     }
     // Si el numero es binario retorna 1

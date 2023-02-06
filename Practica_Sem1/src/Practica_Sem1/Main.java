@@ -16,15 +16,20 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         //=============== Ejercicio a ===============   
-        Ejercicio_a a = new Ejercicio_a ();
+        //=============== Ejercicio a ===============   
+        Ejercicio_a a = new Ejercicio_a();
         String oracion = JOptionPane.showInputDialog("Ej A: Digite una oración ");
         /*
             Imprimir en pantalla el resultado del llamado a la funcion 
             quitarVocales que recibe por parametro la oracion que digito el usuario
          */
-        JOptionPane.showMessageDialog(null, "Su oración sin vocales: \n"
-                + a.quitarVocales(oracion));
+        if (a.quitarVocales(oracion) == null || oracion.isEmpty() || a.quitarVocales(oracion) == " ") {
+            JOptionPane.showMessageDialog(null, " === [ERROR]: Valor vacio ===");
+        } else {
+
+            JOptionPane.showMessageDialog(null, "Su oración sin vocales: \n"
+                    + a.quitarVocales(oracion));
+        }
 
         //=============== Ejercicio b ===============       
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
@@ -41,24 +46,24 @@ public class Main {
         System.out.println(" ");
 
         //=============== Ejercicio c ===============       
-                // Numero a comprobar
-                int N = 101;
+        // Numero a comprobar
+        int N = 101;
 
-                // Llamada de la funcion comprobar binario
-                System.out.println("Resultado con ciclo");
-                System.out.println("El numero es binario?");
-                System.out.println(Ejercicio_c.NumeroBinario(N));
-        
-                // Llamada de la funcion comprobar binario recursiva
-                int bin = Ejercicio_c.NumeroBin(N);
-                if (bin == -1){
-                    System.out.println("Resultado con recursividad");
-                    System.out.println("El numero no es binario");
-                } else if (bin == 1){
-                    System.out.println("Resultado con recursividad");
-                    System.out.println("El numero es binario");
-                }
-        
+        // Llamada de la funcion comprobar binario
+        System.out.println("Resultado con ciclo");
+        System.out.println("El numero es binario?");
+        System.out.println(Ejercicio_c.NumeroBinario(N));
+
+        // Llamada de la funcion comprobar binario recursiva
+        int bin = Ejercicio_c.NumeroBin(N);
+        if (bin == -1) {
+            System.out.println("Resultado con recursividad");
+            System.out.println("El numero no es binario");
+        } else if (bin == 1) {
+            System.out.println("Resultado con recursividad");
+            System.out.println("El numero es binario");
+        }
+
         //=============== Ejercicio d =============== 
         Ejercicio_d calc = new Ejercicio_d(); //Se crea objeto del ejercicio d
         System.out.println("---------- Ejercicio d ----------");
