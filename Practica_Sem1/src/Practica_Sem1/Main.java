@@ -26,10 +26,6 @@ public class Main {
         JOptionPane.showMessageDialog(null, "Su oración sin vocales: \n"
                 + a.quitarVocales(oracion));
 
-         
-        //=============== Ejercicio a ===============       
-        
-        
         //=============== Ejercicio b ===============       
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
 
@@ -45,6 +41,23 @@ public class Main {
         System.out.println(" ");
 
         //=============== Ejercicio c ===============       
+                // Numero a comprobar
+                int N = 101;
+
+                // Llamada de la funcion comprobar binario
+                System.out.println("Resultado con ciclo");
+                System.out.println("El numero es binario?");
+                System.out.println(Ejercicio_c.NumeroBinario(N));
+        
+                // Llamada de la funcion comprobar binario recursiva
+                int bin = Ejercicio_c.NumeroBin(N);
+                if (bin == -1){
+                    System.out.println("Resultado con recursividad");
+                    System.out.println("El numero no es binario");
+                } else if (bin == 1){
+                    System.out.println("Resultado con recursividad");
+                    System.out.println("El numero es binario");
+                }
         
         //=============== Ejercicio d =============== 
         Ejercicio_d calc = new Ejercicio_d(); //Se crea objeto del ejercicio d
