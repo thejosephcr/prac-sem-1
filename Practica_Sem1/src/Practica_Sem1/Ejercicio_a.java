@@ -45,12 +45,12 @@ public class Ejercicio_a {
                     Si existe una vocal elimina el caracter de esa oración con la funcion
                     substring()
                  */
-                return quitarVocales(oracion.substring(1));
+                return quitarVocalesR(oracion.substring(1), ' ');
             } else {
                 /*
                     Si no es una vocal no la elimina y sigue con la siguiente letra
                  */
-                return primeraLetra + quitarVocales(oracion.substring(1));
+                return primeraLetra + quitarVocalesR(oracion.substring(1), ' ');
             }
         }
 
