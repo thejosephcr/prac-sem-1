@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package comprobarbinario;
+package Practica_Sem1;
 
 /**
  *
  * @author jcastellon
  */
-public class comprobarBin {
+public class Ejercicio_c {
     // Funcion para comprobar Binarios
     public static boolean NumeroBinario(int num)
     {
