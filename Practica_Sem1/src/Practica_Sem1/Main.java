@@ -17,7 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
          //=============== Ejercicio a ===============   
-        EjercicioA a = new EjercicioA ();
+        Ejercicio_a a = new Ejercicio_a ();
         String oracion = JOptionPane.showInputDialog("Ej A: Digite una oración ");
         /*
             Imprimir en pantalla el resultado del llamado a la funcion 
