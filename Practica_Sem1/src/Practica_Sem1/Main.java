@@ -35,7 +35,7 @@ public class Main {
         Ejercicio_b sumaNumeros = new Ejercicio_b();    // Se llama a la clase Ejercicio_b, se le asigna el nombre del objeto y se iguala a new Ejercicio_b() para llamar al constructor
 
         int dato = sumaNumeros.Sumanumeros(3); // Se pone el nombre del objeto . y el metodo creado y se le envia el valor de entrada
-
+        
         System.out.println("---------- Ejercicio b ----------");
         if (dato == -1) { // Se valida valor de entrada
             System.out.println("=== [ERROR]: No es un numero natural ===");
@@ -47,8 +47,8 @@ public class Main {
 
         //=============== Ejercicio c ===============       
         // Numero a comprobar
-        int N = 101;
-
+        int N = 123;
+        System.out.println("---------- Ejercicio c----------");
         // Llamada de la funcion comprobar binario
         System.out.println("Resultado con ciclo");
         System.out.println("El numero es binario?");
@@ -63,7 +63,7 @@ public class Main {
             System.out.println("Resultado con recursividad");
             System.out.println("El numero es binario");
         }
-
+          System.out.println(" ");
         //=============== Ejercicio d =============== 
         Ejercicio_d calc = new Ejercicio_d(); //Se crea objeto del ejercicio d
         System.out.println("---------- Ejercicio d ----------");
